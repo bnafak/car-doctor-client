@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
-import logo from "../../src/assets/logo.svg";
+
+
+
 const Navbar = () => {
   const navitems = (
     <>
       <li><Link to='/'>Home</Link></li>
       <li><Link to='/about'>About</Link></li>
+      <li><Link to='/services'>Services</Link></li>
+      <li><Link to='/blogs'>Blogs</Link></li>
       <li><Link to='/login'>Login</Link></li>
     </>
   );
@@ -37,7 +41,8 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          <img src={logo} alt="" />
+        
+          <img src="" alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
